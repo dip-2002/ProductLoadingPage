@@ -3,9 +3,12 @@
     --text :hsl(228,12%,48%);
     --pale : hsl(32,37%,92%);
     --green : hsl(158,36%,37%);
+    --header-text : hsl(212, 21%, 14%);
+    font-family: "Outfit";
 }
 *{
     margin : 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -86,9 +89,12 @@ h2 {
     margin-bottom: 10px;
 }
 
-.icon {
+#icon {
     color: var(--green);
     margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 #features {
@@ -97,8 +103,139 @@ h2 {
     margin: auto;
 }
 
-.feature {
+#feature {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+
+#video {
+    width: 60%;
+}
+
+.product-image {
+    width: 70%;
+    margin: auto;
+    height: 1400px;
+    border: 1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1 {
+    background-image: url(https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982171452/how-to-win-friends-and-influence-people-9781982171452_hr.jpg);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.content {
+    font-family: "Outfit";
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.main-price {
+    margin-right: 20px;
+    font-size: 50px;
+    font-family: "Outfit";
+    color: var(--green);
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: var(--text);
+}
+
+.author {
+    font-family: "Outfit";
+    letter-spacing: 5px;
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+#for_sale {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.header {
+    font-family: "Outfit";
+    margin: 10px 0;
+    color: var(--header-text);
+}
+
+.add {
+    background-color: var(--green);
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    font-family: "Outfit";
+    color: var(--white);
+    font-weight: 700;
+   margin-bottom: 10px;
+}
+
+/*@media only screen and (min-width : 600px) {
+    #nav-bar{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (450px < width <600px) {
+    .card {
+        font-size: 0.85rem;
+    }
+
+    .product-image {
+        height: 400px;
+    }
+}
+
+@media only screen and (450px < width) {
+    .card {
+        display: flex;
+        max-width: 525px;
+    }
+
+    .inner-card {
+        width: 300px;
+        padding: 20px;
+    }
+
+    .product-image {
+        width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+}*/
+.container {
+    text-align: center;
+}
+
+.Contact_Form {
+    text-align: center;
 }
